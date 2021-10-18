@@ -7,7 +7,7 @@ from selenium import webdriver
 import time
 
 total_data = []
-driver = webdriver.Chrome(r'C:\Users\HP\Downloads\Compressed\chromedriver_win32_2/chromedriver.exe')
+driver = webdriver.Chrome(r'C:\Users\HP\Downloads\Compressed\chromedriver_win32/chromedriver.exe')
 company_id = 'ntc'
 driver.get('https://www.sharesansar.com/company/'+company_id)
 elem = driver.find_element_by_id('btn_cpricehistory')
@@ -28,5 +28,5 @@ while True:
     time.sleep(3)
 
 total_df = pd.concat(total_data)
-total_df.to_csv('stockdata.csv')
+total_df.to_csv('lateststockdata.csv')
 print('Successfully created csv file')
