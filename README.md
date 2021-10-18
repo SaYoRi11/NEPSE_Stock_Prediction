@@ -1,0 +1,4 @@
+-Scraped NTC stock data (2011-present) on NEPSE from the website sharesansar.com using bs4 and selenium.
+-Arranged the data in such a way that 60 consecutive days of stock prices have the stock price of next day as the output.
+-Used the data to train a deep learning model consisting of four LSTM layers and tested on the test set with very good results.
+-Tried to predict the 'future', the stock prices of the next 60 days, which the model hasn't seen yet.
